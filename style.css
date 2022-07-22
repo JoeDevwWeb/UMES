@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  width: 100%;
+  background: #E23F3F;
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5%;
+}
+
+/* Logotipo da UMES */
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo #logoUMES{
+  width: 130px;
+}
+.logo h3{
+  color: white;
+  position: relative;
+  top: -25px;
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+main .apresentacao{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+/* Area do texto */
+.apresentacao .descricao-Inicial h1{
+  font-size: 23.3px;
+}
+.apresentacao .descricao-Inicial p{
+  text-align: justify;
+  font-size: 14px;
+}
+.apresentacao div{
+  padding: 5% 3%;
+}
+.apresentacao img{
+  width: 400px;
+}
+
+/* Objetivos da UMES*/
+
+main .objetivos{
+  width: 100%;
+  background: #5C6C94;
+}
+.objetivos ul{
+  padding: 2%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.objetivos ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.objetivos ul .bola{
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+}
