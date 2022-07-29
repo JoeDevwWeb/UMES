@@ -14,12 +14,14 @@ header{
 /* Logotipo da UMES */
 .logo{
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
 }
 .logo #logoUMES{
-  width: 130px;
+  width: 150px;
 }
+
 .logo h3{
   color: white;
   position: relative;
@@ -28,25 +30,34 @@ header{
   font-family: 'Courier New', Courier, monospace;
 }
 
+/* Formatação do conteudo Main*/
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4%;
+  gap: 40px;
+}
 
 main .apresentacao{
   width: 100%;
   display: flex;
   align-items: center;
 }
-/* Area do texto */
-.apresentacao .descricao-Inicial h1{
-  font-size: 23.3px;
-}
-.apresentacao .descricao-Inicial p{
-  text-align: justify;
-  font-size: 14px;
-}
 .apresentacao div{
-  padding: 5% 3%;
+  padding: 2%;
+}
+/* Area do texto */
+h1{
+  font-size: 1.8rem;
+}
+p{
+  text-align: justify;
+  font-size: 0.7rem;
 }
 .apresentacao img{
   width: 400px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* Objetivos da UMES*/
@@ -54,9 +65,17 @@ main .apresentacao{
 main .objetivos{
   width: 100%;
   background: #5C6C94;
+  display: flex;
+  flex-direction: column;
+}
+
+main .objetivos h1:nth-child(1){
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 .objetivos ul{
-  padding: 2%;
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -65,10 +84,39 @@ main .objetivos{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
+  color: white;
 }
 .objetivos ul .bola{
   width: 200px;
   height: 200px;
   background: white;
   border-radius: 50%;
+} 
+
+/* Ações da UMES */
+.acoes{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.acoes div{
+  padding: 2%;
+}
+.acoes img{
+  width: 400px;
+}
+
+.acoes div:nth-child(2){
+  display: flex;
+  gap: 40px;
+}
+
+
+/*footer*/
+footer{
+  width: 100%;
+  height: 100px;
+  background: rgba(12, 100, 80, 0.6);
 }
